@@ -10,6 +10,14 @@ import { AuthComponent } from './component/auth/auth.component';
 import { InscriptionUniteComponent } from './component/inscription-unite/inscription-unite.component';
 import { DeclarationCampComponent } from './component/declaration-camp/declaration-camp.component';
 import { DemandeSubsideComponent } from './component/demande-subside/demande-subside.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { Routes } from '@angular/router';
+import { UniteDataService } from './services/UniteDataService';
+
+const appRoutes: Routes =[
+
+]
 
 @NgModule({
   declarations: [
@@ -24,9 +32,13 @@ import { DemandeSubsideComponent } from './component/demande-subside/demande-sub
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    UniteDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
