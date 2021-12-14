@@ -4,12 +4,15 @@ import { AuthComponent } from './component/auth/auth.component';
 import { DeclarationCampComponent } from './component/declaration-camp/declaration-camp.component';
 import { DemandeSubsideComponent } from './component/demande-subside/demande-subside.component';
 import { InscriptionUniteComponent } from './component/inscription-unite/inscription-unite.component';
+import { ReponseSubsideComponent } from './component/reponse-subside/reponse-subside.component';
 
 const routes: Routes = [
-{ path: 'InscriptionUnite', component: InscriptionUniteComponent},
-{ path: 'DeclarationCamp', component: DeclarationCampComponent},
-{ path: 'DemandeSubside', component: DemandeSubsideComponent},
-{ path: 'Authentification', component: AuthComponent}
+  { path: 'auth', component: AuthComponent},
+  { path: 'unite', component: InscriptionUniteComponent},
+  { path: 'camp', component: DeclarationCampComponent},
+  { path: 'subside', component: DemandeSubsideComponent},
+  { path: 'reponse', component: ReponseSubsideComponent},
+  { path: '', component: AuthComponent}
   
 ];
 

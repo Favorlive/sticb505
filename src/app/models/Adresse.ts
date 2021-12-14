@@ -4,5 +4,5 @@ export class Adresse {
     public Numero: string;
     public CodePostal: string;
     public Ville: string;
-    public Pays: string;
+
 }

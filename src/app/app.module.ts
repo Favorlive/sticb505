@@ -10,14 +10,14 @@ import { AuthComponent } from './component/auth/auth.component';
 import { InscriptionUniteComponent } from './component/inscription-unite/inscription-unite.component';
 import { DeclarationCampComponent } from './component/declaration-camp/declaration-camp.component';
 import { DemandeSubsideComponent } from './component/demande-subside/demande-subside.component';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { Routes } from '@angular/router';
 import { UniteDataService } from './services/UniteDataService';
+import { CampDataService } from './services/CampDataService';
+import { EnfantDataService } from './services/EnfantDataService';
+import { SubsideDataService } from './services/SubsideDataService';
+import { UtilisateurDataService } from './services/UtilisateurDataService';
+import { ReponseSubsideComponent } from './component/reponse-subside/reponse-subside.component';
 
-const appRoutes: Routes =[
-
-]
 
 @NgModule({
   declarations: [
@@ -28,16 +28,20 @@ const appRoutes: Routes =[
     AuthComponent,
     InscriptionUniteComponent,
     DeclarationCampComponent,
-    DemandeSubsideComponent
+    DemandeSubsideComponent,
+    ReponseSubsideComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
   ],
   providers: [
-    UniteDataService
+    UniteDataService,
+    CampDataService,
+    EnfantDataService,
+    SubsideDataService,
+    UtilisateurDataService
   ],
   bootstrap: [AppComponent]
 })

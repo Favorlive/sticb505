@@ -8,6 +8,5 @@ export class Subside {
     public NombreEnfant : number;
     public NombreEncadrant: number;
     public Enfants : Enfant [];
-        
     
 }

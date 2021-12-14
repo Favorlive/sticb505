@@ -13,7 +13,7 @@ export class ResponsableUnite extends Utilisateur {
 
 }
 
-export class Encadrants extends Utilisateur {
+export class Encadrant extends Utilisateur {
     public Role ='Encadrants'
     public Brevet: boolean;
     public Experience : boolean;

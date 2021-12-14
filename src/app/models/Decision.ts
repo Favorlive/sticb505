@@ -3,5 +3,4 @@ export class Decision {
     Verdict:string;
     Montant:string;
     Motivation:string;
-
 }
